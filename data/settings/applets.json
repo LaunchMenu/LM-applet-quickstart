@@ -1,0 +1,8 @@
+{
+    "applet-applet-manager": "@launchmenu/applet-applet-manager",
+    "applet-session-manager": "@launchmenu/applet-session-manager",
+    "applet-settings-manager": "@launchmenu/applet-settings-manager",
+    "applet-window-manager": "@launchmenu/applet-window-manager",
+    "applet-help": "@launchmenu/applet-help",
+    "MyAwesomeApplet": "./"
+}
