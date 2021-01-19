@@ -106,3 +106,5 @@ dist
 
 # LM stuff
 /build
+installPath.json
+*.tgz

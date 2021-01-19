@@ -38,4 +38,28 @@ Check the tray to open the program
 
 ## Locally installing the application
 
-TODO: figure out how to best locally install and document here
+A couple of scripts have been included that allow you to install this applet to your local LaunchMenu instance. These scripts will likely be moved to their own `LM-dev-tools` module in the future.
+
+This applet can locally be installed by running either of the following commands in this directory:
+
+```
+yarn installLocal
+```
+
+```
+npm run installLocal
+```
+
+The first time you run this command, it will ask you to locate the LaunchMenu instance. Simply select the top level directory (the one that contains LaunchMenu.exe) and the script will take care of the rest.
+
+After installation, LaunchMenu will have to be restarted to see the change. This can be done by opening the context menu and searching for `restart` and executing it.
+
+If at any point you want to uninstall the applet again, you can simply use one of the following commands:
+
+```
+yarn uninstallLocal
+```
+
+```
+npm run uninstallLocal
+```

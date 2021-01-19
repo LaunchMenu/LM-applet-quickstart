@@ -1,6 +1,7 @@
 {
     "name": "@launchmenu/applet-quickstart",
     "private": true,
+    "version": "0.0.0",
     "description": "A hello-world application for LM",
     "types": "build/index.d.ts",
     "files": [
@@ -16,7 +17,9 @@
         "test": "jest -i",
         "test-watch": "jest --watch -i",
         "test-watch-debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch --config=\"jest.config.js\"",
-        "prepare": "npm run build"
+        "prepare": "npm run build",
+        "installLocal": "electron scripts/installLocal.js",
+        "uninstallLocal": "electron scripts/uninstallLocal.js"
     },
     "repository": {
         "type": "git",
