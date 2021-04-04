@@ -2,9 +2,11 @@ import React, {FC} from "react";
 import {useDataHook} from "model-react";
 import {
     Box,
+    createContextAction,
     createSettings,
     createSettingsFolder,
     createStandardMenuItem,
+    createStandardSearchPatternMatcher,
     createStringSetting,
     declare,
     Menu,
@@ -31,18 +33,51 @@ export const settings = createSettings({
         }),
 });
 
-const Content: FC = () => {
+const helloWorldPattern = createStandardSearchPatternMatcher({
+    name: "Hello world",
+    matcher: /^world: /,
+});
+
+const alertCombined = createContextAction({
+    name: "Alert",
+    core: (texts: string[]) => ({
+        execute: ({context}) => {
+            const name = context?.settings.get(settings).name.get();
+            const prefix = texts.reduce((total, text, i) => {
+                const dist = texts.length - i - 1;
+                const spacer = dist == 0 ? "" : dist == 1 ? " and " : ", ";
+                return total + (i > 0 ? text.toLowerCase() : text) + spacer;
+            }, "");
+            alert(`${prefix} ${name}`);
+        },
+    }),
+});
+
+const Content: FC<{text: string}> = ({text}) => {
     const context = useIOContext();
     const [hook] = useDataHook();
     const name = context?.settings.get(settings).name.get(hook);
-    return <Box color="primary">Hello {name}!</Box>;
+    return (
+        <Box color="primary">
+            {text} {name}!
+        </Box>
+    );
 };
 
 const items = [
     createStandardMenuItem({
         name: "Hello world",
         onExecute: () => alert("Hello!"),
-        content: <Content />,
+        content: <Content text="Hello" />,
+        searchPattern: helloWorldPattern,
+        actionBindings: [alertCombined.createBinding("Hello")],
+    }),
+    createStandardMenuItem({
+        name: "Bye world",
+        onExecute: () => alert("Bye!"),
+        content: <Content text="Bye" />,
+        searchPattern: helloWorldPattern,
+        actionBindings: [alertCombined.createBinding("Bye")],
     }),
 ];
 

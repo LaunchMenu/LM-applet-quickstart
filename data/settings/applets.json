@@ -4,5 +4,5 @@
     "applet-settings-manager": "@launchmenu/applet-settings-manager",
     "applet-window-manager": "@launchmenu/applet-window-manager",
     "applet-help": "@launchmenu/applet-help",
-    "MyAwesomeApplet": "./"
+    "hello-world": "./"
 }
