@@ -3,32 +3,40 @@ import {useDataHook} from "model-react";
 import {
     Box,
     createContextAction,
+    createKeyPatternSetting,
     createSettings,
     createSettingsFolder,
     createStandardMenuItem,
     createStandardSearchPatternMatcher,
     createStringSetting,
     declare,
+    KeyPattern,
     Menu,
+    Priority,
     searchAction,
     UILayer,
     useIOContext,
 } from "@launchmenu/core";
 
-export const info = {
+const info = {
     name: "HelloWorld",
     description: "A minimal example applet",
     version: "0.0.0",
-    icon: "applets",
-} as const;
+    icon: "applets" as const,
+    tags: ["cool"],
+};
 
-export const settings = createSettings({
+const settings = createSettings({
     version: "0.0.0",
     settings: () =>
         createSettingsFolder({
             ...info,
             children: {
-                name: createStringSetting({name: "User name", init: "Bob"}),
+                username: createStringSetting({name: "User name", init: "Bob"}),
+                alert: createKeyPatternSetting({
+                    name: "Alert shortcut",
+                    init: new KeyPattern("ctrl+g"),
+                }),
             },
         }),
 });
@@ -40,9 +48,14 @@ const helloWorldPattern = createStandardSearchPatternMatcher({
 
 const alertCombined = createContextAction({
     name: "Alert",
+    contextItem: {
+        icon: "send",
+        priority: [Priority.HIGH],
+        shortcut: context => context.settings.get(settings).alert.get(),
+    },
     core: (texts: string[]) => ({
         execute: ({context}) => {
-            const name = context?.settings.get(settings).name.get();
+            const name = context?.settings.get(settings).username.get();
             const prefix = texts.reduce((total, text, i) => {
                 const dist = texts.length - i - 1;
                 const spacer = dist == 0 ? "" : dist == 1 ? " and " : ", ";
@@ -56,7 +69,7 @@ const alertCombined = createContextAction({
 const Content: FC<{text: string}> = ({text}) => {
     const context = useIOContext();
     const [hook] = useDataHook();
-    const name = context?.settings.get(settings).name.get(hook);
+    const name = context?.settings.get(settings).username.get(hook);
     return (
         <Box color="primary">
             {text} {name}!
@@ -90,6 +103,10 @@ export default declare({
         };
     },
     open({context, onClose}) {
-        context.open(new UILayer(() => ({menu: new Menu(context, items), onClose})));
+        context.open(
+            new UILayer(() => ({menu: new Menu(context, items), onClose}), {
+                path: "Hello world",
+            })
+        );
     },
 });
