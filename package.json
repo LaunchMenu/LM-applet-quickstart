@@ -18,8 +18,8 @@
         "test-watch": "jest --watch -i",
         "test-watch-debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand --watch --config=\"jest.config.js\"",
         "prepare": "npm run build",
-        "installLocal": "electron scripts/installLocal.js",
-        "uninstallLocal": "electron scripts/uninstallLocal.js"
+        "install-local": "electron scripts/installLocal.js",
+        "uninstall-local": "electron scripts/uninstallLocal.js"
     },
     "repository": {
         "type": "git",
@@ -37,12 +37,12 @@
     },
     "homepage": "https://github.com/LaunchMenu/LM-applet-quickstart#readme",
     "peerDependencies": {
-        "@launchmenu/core": "^0.0.5-alpha.13",
+        "@launchmenu/core": "^0.1.1",
         "model-react": "^4.0.1",
         "react": "^17.0.0"
     },
     "devDependencies": {
-        "@launchmenu/core": "^0.0.5-alpha.13",
+        "@launchmenu/core": "^0.1.2",
         "@launchmenu/build-tools": "^0.0.2",
         "@testing-library/jest-dom": "^5.5.0",
         "@testing-library/react": "^10.0.3",
@@ -53,11 +53,12 @@
         "react": "^17.0.0",
         "ts-jest": "^26.1.0",
         "electron": "^9.3.1",
-        "@launchmenu/applet-help": "^0.0.5-alpha.13",
-        "@launchmenu/applet-applet-manager": "^0.0.5-alpha.13",
-        "@launchmenu/applet-session-manager": "^0.0.5-alpha.13",
-        "@launchmenu/applet-settings-manager": "^0.0.5-alpha.13",
-        "@launchmenu/applet-window-manager": "^0.0.5-alpha.13"
+        "@launchmenu/applet-help": "^0.1.2",
+        "@launchmenu/applet-applet-manager": "^0.1.2",
+        "@launchmenu/applet-session-manager": "^0.1.2",
+        "@launchmenu/applet-settings-manager": "^0.1.2",
+        "@launchmenu/applet-window-manager": "^0.1.2",
+        "@launchmenu/applet-lm-recorder": "^0.1.2"
     },
     "gitHead": "022dbc089423d10ee0528697003769d2d3aeb7d4",
     "publishConfig": {
