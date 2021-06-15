@@ -43,7 +43,7 @@
     },
     "devDependencies": {
         "@launchmenu/core": "^0.1.2",
-        "@launchmenu/build-tools": "^0.0.2",
+        "@launchmenu/build-tools": "^0.1.0",
         "@testing-library/jest-dom": "^5.5.0",
         "@testing-library/react": "^10.0.3",
         "@types/jest": "^26.0.0",
