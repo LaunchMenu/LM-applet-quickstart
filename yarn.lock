@@ -913,27 +913,27 @@
   dependencies:
     macos-version "^5.2.0"
 
-"@launchmenu/applet-applet-manager@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-applet-manager/-/applet-applet-manager-0.1.2.tgz#5a594d6c1d3c30ec9776a79bd40fcfd9d8514e6d"
-  integrity sha512-HlpSNqo6Wca22OQqSILO6dvbNDlMk9+9kQNIlQtLbxdM6lXe9Uq4NpwH0xst06EXBFfq4IiELc9+fOTajt0z1g==
+"@launchmenu/applet-applet-manager@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-applet-manager/-/applet-applet-manager-0.1.4.tgz#9a491df5d0e84f5a040f13a9da3177403d2cb744"
+  integrity sha512-h8TYLVx5Z6p5iUhS+Tbe1EN75+ub7mZ2XimMOtpAF18MVuGz39emgQRcCN5val53rKJCB28AhuhhnyHmPpvq3g==
   dependencies:
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
 
-"@launchmenu/applet-help@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-help/-/applet-help-0.1.2.tgz#bcb24b483d3e11be0c6f5c00e1fcf3f2e20b5140"
-  integrity sha512-US8BpwBdSxUsJnfMaIPVdGZb8mKOabw8DSRvZPFdmtwKVAW/KLBE43GdAOzZBNhYaMSFGdAKyxRaknHhnkSTFA==
+"@launchmenu/applet-help@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-help/-/applet-help-0.1.4.tgz#ce57f07d2ff05f6e33656f26448d1cba95923769"
+  integrity sha512-LFF+V5kAeCbdj2wrNRMgElp98BaUUYH6ssLzsOgiENSBbf6lI9TwXysbIopH2b0E76hpm4+MMG8GunzO6W904Q==
   dependencies:
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
 
-"@launchmenu/applet-lm-recorder@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-lm-recorder/-/applet-lm-recorder-0.1.2.tgz#6295c6708ab59b4779234c20d3ed10bff1c274c5"
-  integrity sha512-b4YSi9RLQEo5DrvgFdKOcR1SPQcFEfS/KUMR/ZETgDMk/f2nCw6RpxV8WCCKTL1dd37zN6sXSLH5Ka/HUzhZBA==
+"@launchmenu/applet-lm-recorder@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-lm-recorder/-/applet-lm-recorder-0.1.4.tgz#564cb542c7b262f9f1a148122de0656e22dda99e"
+  integrity sha512-DhIJV+0xf2RLFUJeXEZIz7Khj1CKlESMDXzjQn4u4zRV/okLzOSpX2NmnROaZI07wTZXABjgp619p2dHp90X8A==
   dependencies:
     "@ffmpeg-installer/ffmpeg" "^1.0.20"
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
     "@launchmenu/hmr" "^0.1.0"
     color "^3.1.2"
     fluent-ffmpeg "^2.1.2"
@@ -941,33 +941,33 @@
     react-transition-group "^4.4.1"
     uuid "^8.2.0"
 
-"@launchmenu/applet-session-manager@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-session-manager/-/applet-session-manager-0.1.2.tgz#ac5594e8c3d387da8b4d1cadb2135305940cff68"
-  integrity sha512-EJpVPBg1YT4SIRYs95pGcIRFnbWGQ9MCgtjfn9FD449pTHIdeh8xwkTy3H8qFJdvY9jS+qd5nIXMuSas4l4VYQ==
+"@launchmenu/applet-session-manager@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-session-manager/-/applet-session-manager-0.1.4.tgz#d263b3d819c97a2c17364d448c7cd6525940febf"
+  integrity sha512-nvdPxYDvaR8b9XsciYPdJqlS9mkWEMBzbrlADCDT/Q55Szp2RKPuEgopLW4cxCgTfSbFgz9hOMdonW6rhK4S9g==
   dependencies:
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
 
-"@launchmenu/applet-settings-manager@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-settings-manager/-/applet-settings-manager-0.1.2.tgz#1ec0f62206647475bf4472e6f883bff2d0c77491"
-  integrity sha512-0YKGd7s+UgAdzVcTi20Khb6+fBSvoWEhP6mBJ1OX3sO/yW3xl+g0C53Vfp5EnGY1S52cLXq0d5cC1Mgdp0J1sw==
+"@launchmenu/applet-settings-manager@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-settings-manager/-/applet-settings-manager-0.1.4.tgz#9d322cc57ae94f801cad4b216313da36f7c7e3e3"
+  integrity sha512-eUuxtDGiWuGqc1rCqdzJBjdPGG46TXh+ZIZ6RhzwVkhA+hR6K5wP11RnYq5008xh1p2KwHDGeFExZq59B1y7Jg==
   dependencies:
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
 
-"@launchmenu/applet-window-manager@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/applet-window-manager/-/applet-window-manager-0.1.2.tgz#77722294f68da4a11bb7b5583e3344fc9462f7ed"
-  integrity sha512-W9RlqOFhTxU0REJZaKIuCJzXVY7HojR93Bh3DklGCrDT/ZYqkBfQPQutiR0p6LmzFZL5eHTbwIjAtPLTB6XrQg==
+"@launchmenu/applet-window-manager@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/applet-window-manager/-/applet-window-manager-0.1.4.tgz#e6cc265065fe951198b78e13081de69f2de58579"
+  integrity sha512-jCD93JjdLEGT0DT+R4kYktn2sbfhw7dghOdFtOEp4Ig5pho/66tmbK/SEJRxy0YxnI+cSJ9A800py2yAneO2Hw==
   dependencies:
-    "@launchmenu/core" "^0.1.2"
+    "@launchmenu/core" "^0.1.4"
     auto-launch "^5.0.5"
     regedit "^3.0.3"
 
-"@launchmenu/build-tools@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/build-tools/-/build-tools-0.0.2.tgz#692c9b94556c981c330305f89306f30c1913b9a6"
-  integrity sha512-MYxcDjm6l8LyDORQc1n1gPzcIO2KBc7EsDCcS/nz6kGMlXnN2O14Uj6Hc1UAsqoEZLFAuHweMAKgpEgQbzw/PQ==
+"@launchmenu/build-tools@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@launchmenu/build-tools/-/build-tools-0.1.0.tgz#99d59d75fab752cb99b27d37554dc5b2cc10d58f"
+  integrity sha512-iEURGRcognibpob6wNgzZTLAghoAlKaSovVnukknalgSo+gDSkYK6iP/pz5fyHgRdn7MpjK3g9jGY5XpPA8nxw==
   dependencies:
     args "^5.0.1"
     chalk "^4.1.0"
@@ -975,12 +975,12 @@
     cpx "^1.5.0"
     cross-spawn-promise "0.10.2"
     rimraf "^3.0.2"
-    typescript "4.0.2"
+    typescript "4.1.3"
 
-"@launchmenu/core@^0.1.2":
-  version "0.1.2"
-  resolved "https://registry.yarnpkg.com/@launchmenu/core/-/core-0.1.2.tgz#e2f883b662e2ca794a8415e7c8c127749c9792b8"
-  integrity sha512-QsH9dcmVyFLMJuo8/GJt25gPcMhKKBvOYKhr3bH3Y2/T8qe4XJ4VyQz1fR/xqpXZHraUptiQtoaifS05iKPiBw==
+"@launchmenu/core@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@launchmenu/core/-/core-0.1.4.tgz#4425b1380686ef578fa4c4348ac4d23668520e89"
+  integrity sha512-1x2YKGQqpnGrhIQTK9I0fuYJiEnmLN+n2Psf1PaeBT6sT8RaHp10CpKEHH53QLVHGV7IbTZk5v0pz/YNdNEZ1Q==
   dependencies:
     "@emotion/react" "^11.1.4"
     "@emotion/serialize" "^1.0.0"
@@ -5703,10 +5703,10 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
-  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
+typescript@4.1.3:
+  version "4.1.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.1.3.tgz#519d582bd94cba0cf8934c7d8e8467e473f53bb7"
+  integrity sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
 
 unified@^9.0.0:
   version "9.2.1"

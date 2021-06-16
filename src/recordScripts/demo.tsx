@@ -122,7 +122,9 @@ export default declareVideoScript(
 
 /**
  * Sets up a fake alert function that doesn't use teh normal alert UI (since that's not visible in screen recordings + freezes UI)
- *
+ * @param visualizer The visualizer to use to display the alert
+ * @param controller The controller to use to open a key listener for closing of the alert
+ * @returns A function to revert the alert override
  */
 function setupFakeAlert(visualizer: Visualizer, controller: Controller): () => void {
     (global as any).originalAlert = (global as any).originalAlert || global.alert; // Nvm type safety, this is a hacky thing to begin with (only acceptable because it only affects recordings)
